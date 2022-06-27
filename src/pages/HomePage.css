@@ -1,0 +1,45 @@
+.HomePage {
+    margin: 0;
+}
+
+/* .header-container {
+    display: grid;
+    height: 100%;
+    position: relative;
+}
+
+.header-image {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    position: relative;
+} */
+
+.header-icons {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.header-text {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    color: white;
+    position: absolute;
+    padding: 2rem;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -75%);
+}
+
+.sub-text {
+    padding: 0.5rem;
+}
+
+.header-chevron {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding-bottom: 2rem;
+}

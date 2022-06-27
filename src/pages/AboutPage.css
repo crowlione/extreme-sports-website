@@ -1,0 +1,29 @@
+.about-section {
+    height: 100vh;
+}
+
+.toolbar {
+    justify-content: space-between;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-btns div {
+    margin: 1rem;
+}
+
+.section-header {
+    padding: 3rem 4rem
+}
+
+.bot-container {
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
