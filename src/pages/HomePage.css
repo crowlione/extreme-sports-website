@@ -20,6 +20,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
 }
 
@@ -29,8 +30,8 @@
     position: absolute;
     padding: 2rem;
     top: 50%;
-    left: 25%;
-    transform: translate(-50%, -75%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sub-text {

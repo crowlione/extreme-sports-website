@@ -19,32 +19,43 @@ import MessageParser from '../chatbot/MessageParser.js';
 import ActionProvider from '../chatbot/ActionProvider.js';
 import IconButton from '@mui/material/IconButton';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
+import CloseIcon from '@mui/icons-material/Close';
 
 import './AboutPage.css';
 import StickyFooter from '../components/StickyFooter';
 
 function AboutPage() {
     const [showBot, setShowBot] = useState(false);
+    const logo = require('../images/logo_transparent.png')
     return (
         <div className="about-section">
-            <AppBar position="static">
+            <AppBar position="static" sx={{ backgroundColor: 'transparent', color: 'black' }}>
                 <Toolbar className="toolbar">
-                    <Typography variant="h6" component="div">
+                    <img src={logo} alt='Logo' style={{ width: '5rem', marginTop: '1rem' }}></img>
+                    {/* <Typography variant="h6" component="div">
                         LOGO
-                    </Typography>
+                    </Typography> */}
                     <div className='nav-btns'>
-                        <Typography variant="h6" component="div">
-                            Home
-                        </Typography>
-                        <Typography variant="h6" component="div">
-                            About
-                        </Typography>
-                        <Typography variant="h6" component="div">
-                            Offers
-                        </Typography>
+                        <a href='#' style={{ textDecoration: 'none', color: 'black' }}>
+                            <Typography variant="h6" component="div">
+                                Home
+                            </Typography></a>
+                        <a href='#about' style={{ textDecoration: 'none', color: 'black' }}>
+                            <Typography variant="h6" component="div">
+                                About
+                            </Typography></a>
+                        <a href='#offers' style={{ textDecoration: 'none', color: 'black' }}>
+                            <Typography variant="h6" component="div">
+                                Offers
+                            </Typography></a>
+                        <a href='#contact' style={{ textDecoration: 'none', color: 'black' }}>
+                            <Typography variant="h6" component="div">
+                                Contact
+                            </Typography></a>
                     </div>
                 </Toolbar>
             </AppBar>
+            <a name="about"></a>
             <Typography variant="h2" component="div" pl={10} py={4}>ABOUT</Typography>
             <Box>
                 <Masonry columns={2} spacing={8} sx={{ px: 10 }}>
@@ -83,6 +94,7 @@ function AboutPage() {
                     </Paper>
                 </Masonry>
             </Box>
+            <a name="offers"></a>
             <Typography variant="h2" component="div" pl={10} py={4}>WHAT WE OFFER</Typography>
             <Box sx={{ px: 20 }}>
                 <Masonry columns={2} spacing={6}>
@@ -93,7 +105,7 @@ function AboutPage() {
                 <Typography variant="h2" component="div" pl={10} py={4}>HAVE MORE QUESTIONS?</Typography>
                 <div className='bot-container'>
                     <IconButton color="primary" aria-label="chatbot" onClick={() => setShowBot(!showBot)}>
-                        <SmartToyIcon sx={{ fontSize: "45px" }} />
+                        {showBot ? <CloseIcon sx={{ fontSize: "20px" }} /> : <SmartToyIcon sx={{ fontSize: "45px" }} />}
                     </IconButton>
                     {showBot &&
                         <Chatbot
@@ -102,7 +114,8 @@ function AboutPage() {
                             actionProvider={ActionProvider}
                         />}
                 </div>
-                <Box sx={{ display: 'flex', justifyContent: 'center', gap: 20, paddingBottom: 10, paddingTop: 2}}>
+                <a name="contact"></a>
+                <Box sx={{ display: 'flex', justifyContent: 'center', gap: 20, paddingBottom: 10, paddingTop: 2 }}>
                     <Grid>
                         <Card style={{ maxWidth: 450, padding: "20px 5px", margin: "0 auto" }}>
                             <CardContent>

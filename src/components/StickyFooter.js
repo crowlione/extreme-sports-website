@@ -3,9 +3,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import SocialIcons from './SocialIcons';
+
 
 function Copyright() {
     return (
@@ -85,11 +84,7 @@ export default function StickyFooter() {
                 </Container>
             </Box>
             <Container maxWidth="sm" sx={{ textAlign: 'center'}}>
-                <Box sx={{ paddingBottom: 2, paddingTop: 2 }}>
-                    <InstagramIcon sx={{ fontSize: "45px", color: '#414958' }} />
-                    <TwitterIcon sx={{ fontSize: "45px", color: '#414958' }} />
-                    <FacebookIcon sx={{ fontSize: "45px", color: '#414958' }} />
-                </Box>
+                <SocialIcons fontSize="45px" color="#296573" />
                 <Copyright />
             </Container>
         </Box>
