@@ -15,8 +15,43 @@ class ActionProvider {
     }
 
     greet() {
-        const greetingMessage = this.createChatBotMessage("Hi, friend.")
-        this.updateChatbotState(greetingMessage)
+        const greetingMessage = this.createChatBotMessage("Hi, friend. What can I help you with?", {
+            widget: 'botOption',
+        });
+        this.updateChatbotState(greetingMessage);
+    };
+
+    handleOffers = () => {
+        const message = this.createChatBotMessage(
+            "Here is the link to all of our offers:",
+            {
+              widget: "offersLink",
+            }
+          );
+      
+        this.updateChatbotState(message);
+    }
+
+    handleAbout = () => {
+        const message = this.createChatBotMessage(
+            "You can learn more about us  here:",
+            {
+              widget: "aboutLink",
+            }
+          );
+      
+        this.updateChatbotState(message);
+    }
+
+    handleContact = () => {
+        const message = this.createChatBotMessage(
+            'You can either keep chatting with me, or, if you want, you can fill out our contact form below and a real person will answer you within 24 hours!',
+            {
+              widget: "contactLink",
+            }
+          );
+      
+        this.updateChatbotState(message);
     }
 
     updateChatbotState(message) {
