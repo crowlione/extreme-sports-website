@@ -39,13 +39,13 @@ export default function StickyFooter() {
                         Company
                     </Typography>
                     <Box component="div" sx={{ display: 'flex', flexDirection: 'column' }}>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             About
                         </Link>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             Blog
                         </Link>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             Contact
                         </Link>
                     </Box>
@@ -55,13 +55,13 @@ export default function StickyFooter() {
                         Support
                     </Typography>
                     <Box component="div" sx={{ display: 'flex', flexDirection: 'column' }}>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             FAQ
                         </Link>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             Booking first climb?
                         </Link>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             Climbing Tips
                         </Link>
                     </Box>
@@ -71,13 +71,13 @@ export default function StickyFooter() {
                         Terms & Policies
                     </Typography>
                     <Box component="div" sx={{ display: 'flex', flexDirection: 'column' }}>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             Terms of service
                         </Link>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             Privacy Policy
                         </Link>
-                        <Link color="inherit" href="" underline="none">
+                        <Link color="inherit" href="" underline="none" sx={{':hover': { transform: 'scale(1.25)' }}}>
                             Security
                         </Link>
                     </Box>
